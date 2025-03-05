@@ -1,0 +1,184 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    grid-template-rows: auto;
+
+    a {
+        text-decoration: none;
+        color: snow;
+    }
+}
+.item {
+    background-color: rgb(62, 62, 62);
+    padding: 2px 6px;
+    border-radius: 6px;
+    footer {
+        h3 {
+            border-bottom: 1px solid white;
+        }
+        // .price {
+        //     border-top: 1px solid white;
+        // }
+    }
+}
+.item-page {
+    margin: 4px;
+    .item {
+        // display: flex;
+        margin: 4px;
+        gap: 12px;
+        section {
+            margin: 8px;
+            .img {
+                width: 400px;
+                height: 350px;
+                object-fit: fill;
+                border-radius: 4px;
+                border: 1px solid #b1b0b0;
+            }
+        }
+        footer {
+            border: none;
+            h3 {
+                text-align: center;
+            }
+            .desc {
+                font-size: 16px;
+                font-weight: 400;
+                margin: 4px 0px;
+            }
+            .price {
+                margin: 4px 0px;
+                text-align: right;
+            }
+            .common-button {
+                width: fit-content;
+                padding: 4px 18px;
+            }
+            .stepper-button {
+                width: fit-content;
+                p {
+                    padding: 6px 20px;
+                }
+            }
+        }
+    }
+}
+
+.cart-list {
+    >div {
+        display: flex;
+        gap: 10px;
+    }
+    .wrapper {
+        display: flex;
+        gap: 6px;
+        flex-direction: column;
+        // flex-grow: 1;
+        width: 70%;
+        div.list {
+            flex-direction: row;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            border: 1px solid #4d4d4d;
+            padding: 4px;
+            > div {
+                display: flex;
+                gap: 10px;
+                img {
+                    height: 75px;
+                    width: 150px;
+                }
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                     > p {
+                        margin: 6px;
+                        text-transform: capitalize;
+                     }
+                }
+            }
+
+            .stepper-button {
+                display: flex;
+                justify-self: flex-end;
+                align-self: center;
+                .common-button {
+                    width: fit-content;
+                    padding: 4px 18px;
+                }
+                p {
+                    padding: 6px 20px;
+                }
+            }
+        }
+    }
+    .summary {
+        border: 1px solid #4d4d4d;
+        padding: 4px;
+        height: fit-content;
+        width: 30%;
+        h2 {
+            margin: 0px;
+        }
+        .summary-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            p {
+                margin: 4px;
+                text-transform: capitalize;
+            }
+        }
+        .total {
+            margin: 4px;
+            font-weight: bolder;
+            border-top: 1px solid #4d4d4d;
+        }
+    }
+}
+
+.empty {
+    background-color: #4d4d4d;
+    padding: 8px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #4d4d4d;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    row-gap: 10px;
+    div.header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #4d4d4d;
+        h4, p {
+            margin: 4px 0px;
+        }
+    }
+    .item-list {
+        display: flex;
+        gap: 10px;
+        p {
+            text-transform: capitalize;
+        }
+    }
+    img {
+        height: 50x;
+        width: 75px;
+        object-fit: fill;
+        border-radius: 4px;
+        border: 1px solid #b1b0b0;
+    }
+}
